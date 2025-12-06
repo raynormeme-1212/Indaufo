@@ -1,0 +1,34 @@
+
+:root{
+  --bg:#07031A;
+  --purple:#3A0CA3;
+  --electric:#00D1FF;
+  --pink:#FF2D95;
+  --text:#E7F0FF;
+}
+*{box-sizing:border-box;font-family:Inter,Arial,Helvetica,sans-serif;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);line-height:1.5}
+.site-header{display:flex;align-items:center;justify-content:space-between;padding:20px 40px;background:linear-gradient(90deg,rgba(0,0,0,0.2),transparent);position:fixed;left:0;right:0;top:0;z-index:50}
+.logo{font-weight:700;font-size:20px;color:var(--electric)}
+.nav a{margin:0 12px;color:var(--text);text-decoration:none;font-size:15px;opacity:0.9}
+.cta{background:var(--purple);padding:10px 16px;border-radius:6px;color:white;text-decoration:none}
+.hero{position:relative;height:68vh;overflow:hidden;display:flex;align-items:center}
+.hero-img{width:100%;height:100%;object-fit:cover;filter:brightness(0.45) saturate(1.1)}
+.hero-overlay{position:absolute;left:60px;top:80px;max-width:640px}
+.hero-overlay h1{font-size:48px;margin-bottom:12px;letter-spacing:0.5px}
+.hero-overlay p{font-size:18px;margin-bottom:18px;color:rgba(231,240,255,0.9)}
+.buttons .btn{display:inline-block;margin-right:12px;padding:12px 18px;border-radius:8px;text-decoration:none;color:var(--text);background:rgba(255,255,255,0.04)}
+.buttons .primary{background:linear-gradient(90deg,var(--purple),var(--electric));color:white;box-shadow:0 6px 18px rgba(0,0,0,0.4)}
+.container{max-width:1100px;margin:40px auto;padding:20px}
+.cards{display:flex;gap:18px;margin-top:20px}
+.card{flex:1;background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.01));padding:18px;border-radius:10px}
+.embed-placeholder{height:120px;background:linear-gradient(90deg,rgba(0,0,0,0.3),rgba(255,255,255,0.02));border-radius:8px;display:flex;align-items:center;justify-content:center;color:rgba(231,240,255,0.6)}
+.artist-row{display:flex;gap:16px;margin-top:12px}
+.artist img{width:180px;height:120px;object-fit:cover;border-radius:6px;display:block}
+.booking .embed-placeholder{height:160px}
+.site-footer{padding:20px;text-align:center;color:rgba(231,240,255,0.6);margin-top:40px}
+@media(max-width:800px){
+  .hero-overlay{left:24px;top:60px;max-width:80%}
+  .cards{flex-direction:column}
+  .artist-row{flex-direction:column}
+}
